@@ -5,14 +5,21 @@
 * {
     font-family: 'Texturina', serif;
     text-decoration: none;
-    background-color: #4B3F72;
+    background-color: #FCDEBE;
     text-align: center;
     font-size: 1.1rem;
 }
 
+div {
+    background-color: transparent;
+}
+
+/*           TEXT            */
+
 p {
     font-family: 'Bitter', serif;
-
+    font-size: 0.8rem;
+    background-color: transparent;
 }
 
 h1 {
@@ -20,31 +27,46 @@ h1 {
 }
 
 h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
     text-align: left;
 }
+
+/*          OTHER           */
 
 ul {
     list-style-type: none;
     overflow: hidden;
     padding: 0;
-    background-color: #19647E;
+    background-color: #928779;
+    font-size: inherit;
     display: flex;
     justify-content: space-between;
 }
 
-li:hover {
-    background-color: #145266;
+ul li {
+    flex-basis: 13%;
+    float: left;
+    padding: 3px 5px;
+    display: block;
+    background-color: #D4D2A5;
+    transition: 0.6s;
 }
 
-li {
-    float: left;
-    padding: 10px;
-    display: block;
-    background-color: #119DA4;
+ul li:hover {
+    background-color: #B6B268;
 }
 
 a {
+    text-decoration: none;
     background: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    line-height: inherit;
 }
 
 /*     STYLOWEANIE DLA ELEMENTÓW    */
@@ -54,13 +76,19 @@ nav {
     margin: 20px 0 20px 0;
     border-style: solid;
     border-width: 10px;
-    border-color: #1F2041;
+    border-color: #655D53;
     border-left: none;
     border-right: none;
 }
 
 
 /*          MAIN            */
+
+body {
+    margin: 0 20px;
+    padding: 0;
+    min-width: 840px;
+}
 
 main {
     display: flex;
@@ -71,8 +99,41 @@ main {
 
 main section {
     flex-basis: 33%;
+    margin: 0 px;
 }
 
 main section article {
+    border-bottom: dotted 0.25rem #613505;
 
+}
+
+main section article h3 {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+main section article h3:hover {
+    color: #535028;
+}
+
+/*          FOOTER          */
+
+footer {
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #655D53;
+}
+
+.adverts {
+    margin: 5px 0px;
+    display: block;
+}
+
+.adverts img {
+    display: inline;
+    width: 100%;
+}
+
+.adverts {
+    display: block;
 }
